@@ -13,7 +13,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	server := http.NewServeMux()
 	server.HandleFunc("/ ", Handler)
-	server.HandleFunc("/another", domain.AHandler)
+	server.HandleFunc("/anothers", domain.AHandler)
 
 
 	http.ListenAndServe(":8080", server)
